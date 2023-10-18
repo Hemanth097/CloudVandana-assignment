@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="Name">
+        <h1>Customer Survey Form</h1>
+    </div>
+    <form action="#" onsubmit="submitfun()">
+		<div class="container">
+		    <div class="section col">
+		        <div class="field-container">
+		            <label for="fname">First Name</label>
+		            <br><br>
+		            <input type="text" name="fname" id="fname" required>
+		        </div>
+		        <div class="field-container">
+		            <label for="lname">Last Name</label><br><br>
+		            <input type="text" name="lname" id="lname" required>
+		        </div>
+		    </div>
+
+		    <div class="section col">
+		        <div class="field-container">
+		            <label for="DoB">Date Of Birth</label>
+		            <br><br>
+		            <input type="date" name="DoB" id="DoB" required>
+		        </div>
+		        <div class="field-container">
+		            <label for="country">Country</label>
+		            <br><br>
+		            <select id = "country" name = "country" required >
+		            	<option value="none" selected disabled hidden>--Select--</option>
+			            <option value="Afghanistan">Afghanistan</option>
+			            <option value="Albania">Albania</option>
+			            <option value="Algeria">Algeria</option>
+			            <option value="American Samoa">American Samoa</option>
+			            <option value="Andorra">Andorra</option>
+			            <option value="Angola">Angola</option>
+			            <option value="Anguilla">Anguilla</option>
+			            <option value="Antartica">Antarctica</option>
+			            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+			            <option value="Argentina">Argentina</option>
+			            <option value="India">India</option>
+			            <option value="others">others</option>
+		        	</select>
+		        </div>
+		    </div>
+
+		    <div class="section">
+		    	<label for="gender" id = "gender">Gender</label>
+		    	<input type="radio" name="gender" value="Male"> Male 
+		    	<input type="radio" name="gender" value="Female"> Female 
+		    	<input type="radio" name="gender" value="Others"> Others 
+		    </div>
+
+
+		    <div class="section">
+		        <label for="profession">Profession</label><br><br>
+		        <input type="text" name="profession" id="profession" required>
+		    </div>
+
+		    <div class="section">
+		        <label for="email">Email</label><br><br>
+		        <input type="email" name="email" id="email" required>
+		    </div>
+
+		    <div class="section">
+		        <label for="phone">phone number:</label><br><br>
+		        <input type="text" id="phone" name="phone" pattern="[0-9]{10}">
+		    </div>
+
+
+		    <div class="button-container">
+		        <input type="submit" value="Submit">
+		        <input type="reset" value="Reset">
+		    </div>
+		</div>
+    </form>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+    	function submitfun(){
+    	    var fname = document.getElementById("fname").value;
+    	    var lname = document.getElementById("lname").value;
+    	    
+    	    var dob = document.getElementById("DoB").value;
+    	    var country = document.getElementById("country").value;
+
+    	    var gendercheck = document.getElementsByName("gender");
+    	    var gender = "";
+
+    	    for (i = 0; i < gendercheck.length; i++) {
+    	        if (gendercheck[i].checked){
+    	            gender = gendercheck[i].value;
+    	        }
+    	    }
+
+    	    var profession = document.getElementById("profession").value;
+    	    var email = document.getElementById("email").value;
+    	    var phone = document.getElementById("phone").value;
+
+    	    
+    	    alert("Name : " + fname +" "+ lname + "\nDoB : " + dob + "\ncountry : " + country + "\nGender : " + gender + "\nProfession : " + profession + "\nEmail : " + email + "\nphone : " + phone);
+    	}
+
+
+
+
+    </script>
+
+
+</body>
+</html>
