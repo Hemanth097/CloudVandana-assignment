@@ -1,0 +1,100 @@
+* , html, body, p {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BDBDBD;
+}
+
+body{
+    margin-top: 10%;
+}
+ 
+
+/* Grid */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100vh; */
+}
+ 
+
+.calc-container {
+    display: grid;
+    background-color: black;
+    
+}
+
+
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    
+}
+
+/* Input */
+#input {
+    width: 75%;
+    padding-left: 14px;
+    font-size: 2em;
+    text-align: left;
+    height: 2.1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #212121;
+    background-color: white;
+    transition: all 0.3s ease-in;
+}
+/* Btn's */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    
+}
+
+.btn-num {
+    background-color: #212121;
+    color: #FFFFFF;
+}
+
+.btn-num:hover {
+    background-color: #233B55;
+}
+
+.btn-operator {
+ 
+    background-color: #757575;
+    color: #ffffff;
+}
+
+.btn-operator:hover {
+    background-color: rgb(52, 155, 196) !important
+}
+ 
+#input-container {
+    display: flex;
+    align-items: center;
+}
+
+
+#clear-button {
+    margin: 0px;
+    padding: 22.5px 22px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #129688;
+    color: #ffffff;
+    transition: all 0.3s ease-in;
+}

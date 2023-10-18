@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator - Hemanth</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+	<div class="main-container">
+		<div class="calc-container">
+			<div id="input-container">
+				<div id="input" class=""></div>
+				<div class="btn btn-operator" id="clear-button" onclick="clearInput()">AC</div>
+			</div>
+
+
+			<div id='buttons-container'>
+
+				<div class="btn btn-num" onclick="insertNum(7)">7</div>
+				<div class="btn btn-num" onclick="insertNum(8)">8</div>
+				<div class="btn btn-num" onclick="insertNum(9)">9</div>
+				<div class="btn btn-operator " onclick="insertNum('+')">+</div>
+
+				<div class="btn btn-num" onclick="insertNum(4)">4</div>
+				<div class="btn btn-num" onclick="insertNum(5)">5</div>
+				<div class="btn btn-num" onclick="insertNum(6)">6</div>
+				<div class="btn btn-operator " onclick="insertNum('-')">-</div>
+
+				<div class="btn btn-num" onclick="insertNum(1)">1</div>
+				<div class="btn btn-num" onclick="insertNum(2)">2</div>
+				<div class="btn btn-num" onclick="insertNum(3)">3</div>
+				<div class="btn btn-operator " onclick="insertNum('/')">/</div>
+
+
+				<div class="btn btn-num" onclick="insertNum('.')">.</div>
+				<div class="btn btn-num dot" onclick="insertNum(0)">0</div>
+				<div class="btn btn-num" onclick="equalTo()">=</div>
+				<div class="btn btn-operator " onclick="insertNum('*')">x</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
