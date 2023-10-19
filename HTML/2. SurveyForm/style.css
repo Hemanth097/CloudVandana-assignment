@@ -76,7 +76,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="date"], /* Add input[type="date"] selector */
+input[type="date"],
 select {
     flex: 2;
     width: 100%;
